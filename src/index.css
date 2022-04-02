@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-base;
+  }
+  body {
+    @apply subpixel-antialiased bg-cyan-400;
+  }
+  #root {
+    @apply w-leave-width h-leave-height m-auto text-center bg-white flex;
+  }
+  .title-section {
+    @apply text-3xl font-semibold font-oswald pb-8 relative after:bg-emerald-400 after:h-1 after:w-10 after:absolute after:content-[''] after:bottom-6 after:left-0;
+  }
+  .item-list {
+    @apply ml-5 relative before:bg-gray-700 before:w-1.5 before:h-1.5 before:rounded before:top-2.5 before:absolute before:-left-5;
+  }
+  .item-list-span {
+    @apply font-normal text-gray-700;
+  }
+  p {
+    @apply text-lg font-light font-poppins;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+}
+
+@layer utilities {
+  .filter-none {
+    filter: none;
+  }
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
+}
