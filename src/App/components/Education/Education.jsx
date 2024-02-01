@@ -6,13 +6,23 @@ const Education = () => {
 			<h2 className='title-section'>EDUCACIÓN</h2>
 			<div className='w-full h-auto flex flex-col'>
 				<EducationItem
-					year='2020-ACTUALIDAD'
-					degree='FRONTEND CON REACT'
-					house='Platzi - Internacional'
+					year='2023-ACTUALIDAD'
+					degree='EPIC WEB DEV'
+					house='Kent C. Dodds - Internacional'
+				/>
+				<EducationItem
+					year='2023-ACTUALIDAD'
+					degree='EPIC REACT DEV'
+					house='Kent C. Dodds - Internacional'
+				/>
+				<EducationItem
+					year='2022-2023'
+					degree='TESTING JAVASCRIPT'
+					house='Kent C. Dodds - Internacional'
 				/>
 				<EducationItem
 					year='2020-ACTUALIDAD'
-					degree='ESCUELA DE JAVASCRIPT'
+					degree='ESCUELA DESARROLLO WEB'
 					house='Platzi - Internacional'
 				/>
 				<EducationItem
