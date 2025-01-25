@@ -1,35 +1,19 @@
-import { Separator } from '@/components/ui/separator';
+import { Section } from '@/components/ui/';
+import { data } from '@/data/data';
 import './App.css';
 
 function App() {
 	return (
 		<main className='w-[81.6rem] h-[105.462rem] mt-10 mx-auto p-6 bg-white'>
-			<section>
-				<h2 className='text-center scroll-m-20 text-xl font-semibold tracking-tight'>
-					DATOS
-				</h2>
-				<Separator className='my-1 bg-gray-600 h-[.15rem]' />
-			</section>
-			<section>
-				<h2 className='text-center scroll-m-20 text-xl font-semibold tracking-tight'>
-					EXPERIENCIA
-				</h2>
-				<Separator className='my-1 bg-gray-600 h-[.15rem]' />
-			</section>
-			<section>
-				<h2 className='text-center scroll-m-20 text-xl font-semibold tracking-tight'>
-					CERTIFICACIONES
-				</h2>
-				<Separator className='my-1 bg-gray-600 h-[.15rem]' />
-			</section>
-			<section>
-				<h2 className='text-center scroll-m-20 text-xl font-semibold tracking-tight'>
-					ESTUDIOS
-				</h2>
-				<Separator className='my-1 bg-gray-600 h-[.15rem]' />
-			</section>
+			<h1 className='text-4xl font-bold text-center'>{data.name}</h1>
+			<p className='text-xl text-center mb-4'>{`${data.location} | ${data.phone} | ${data.email}`}</p>
+			<Section title='EXPERIENCIA' items={data.experience} />
+			<Section title='EDUCACIÓN' items={data.education} />
+			<Section title='HABILIDADES' items={data.skills} />
 		</main>
 	);
 }
+
+App.displayName = 'App';
 
 export default App;
