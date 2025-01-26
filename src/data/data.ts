@@ -3,6 +3,7 @@ export type Data = {
 	location: string;
 	phone: string;
 	email: string;
+	summary: string;
 	experience: Item[];
 	education: Item[];
 	skills: string[];
@@ -25,6 +26,8 @@ export const data: Data = {
 	location: 'Santiago, Chile',
 	phone: '+56 9 1234 5678',
 	email: 'email@gmail.com',
+	summary:
+		'Ingeniero en Informática con 5 años de experiencia en desarrollo de aplicaciones web. Especializado en ReactJS y VueJS, con conocimientos en NodeJS, Express, MongoDB, PostgreSQL, Git, Docker, Kubernetes, AWS, Azure y Google Cloud Platform.',
 	experience: [
 		{
 			id: `experience-1`,
