@@ -8,9 +8,9 @@ function App() {
 			<h1 className='text-4xl font-bold text-center'>{data.name}</h1>
 			<p className='text-xl text-center mb-4'>{`${data.location} | ${data.phone} | ${data.email}`}</p>
 			<p className='text-lg mb-4'>{data.summary}</p>
-			<Section title='EXPERIENCIA' items={data.experience} />
-			<Section title='EDUCACIÓN' items={data.education} />
-			<Section title='HABILIDADES' items={data.skills} />
+			<Section title='EXPERIENCE' items={data.experience} />
+			<Section title='EDUCATION' items={data.education} />
+			<Section title='SKILLS' items={data.skills} />
 		</main>
 	);
 }
