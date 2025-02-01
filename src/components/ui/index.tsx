@@ -1,6 +1,6 @@
-import { Separator } from './separator';
-import { SectionTitle } from './sectionTitle';
-import { SectionItem } from './sectionItem';
 import { Section } from './section';
+import { SectionItem } from './sectionItem';
+import { SectionTitle } from './sectionTitle';
+import { Separator } from './separator';
 
-export { Separator, SectionTitle, Section, SectionItem };
+export { Section, SectionItem, SectionTitle, Separator };
