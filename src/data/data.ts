@@ -3,6 +3,7 @@ export type Data = {
 	location: string;
 	phone: string;
 	email: string;
+	linkedin: string;
 	summary: string;
 	experience: Item[];
 	education: Item[];
@@ -11,9 +12,9 @@ export type Data = {
 
 export type Item = {
 	id: string;
-	name: string;
+	name?: string;
 	title: string;
-	location: string;
+	location?: string;
 	startDate?: string;
 	endDate: string;
 	activities?: string[];
@@ -26,12 +27,13 @@ export const data: Data = {
 	location: 'Santiago, Chile',
 	phone: '+56 9 8274 9139',
 	email: 'rubenpenap@gmail.com',
+	linkedin: 'linkedin.com/in/rubenpenap/',
 	summary:
 		'Technical leader with experience in frontend development and modern architectures. Specialized in React, TypeScript, and designing scalable solutions, focusing on improving customer experience and fostering high-performance teams.',
 	experience: [
 		{
 			id: 'experience-1',
-			name: 'Scotiabank',
+			name: 'Scotiabank Chile',
 			title: 'Technical Lead',
 			location: 'Santiago, Chile',
 			startDate: 'February 2023',
@@ -69,9 +71,7 @@ export const data: Data = {
 		},
 		{
 			id: 'experience-3',
-			name: 'NTT DATA Europe & Latam',
 			title: 'Senior Software Engineer',
-			location: 'Santiago, Chile',
 			startDate: 'September 2021',
 			endDate: 'September 2022',
 			activities: [
@@ -88,9 +88,7 @@ export const data: Data = {
 		},
 		{
 			id: 'experience-4',
-			name: 'NTT DATA Europe & Latam',
 			title: 'Software Engineer',
-			location: 'Santiago, Chile',
 			startDate: 'December 2020',
 			endDate: 'September 2021',
 			activities: [

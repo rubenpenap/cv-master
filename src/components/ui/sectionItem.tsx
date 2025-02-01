@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { BriefcaseBusiness } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import {} from '@/components/ui/';
 import { Item } from '@/data/data';
@@ -18,14 +19,18 @@ const SectionItem: React.FC<SectionItemProps> = ({
 			className={cn(`grid grid-cols-2 place-content-between mb-2`, className)}
 			{...props}
 		>
-			<h3 className='text-lg font-bold leading-6'>{item.name}</h3>
-			<h3 className='text-lg font-bold leading-6 text-right'>
-				{item.location}
-			</h3>
-			<p className='text-lg italic leading-6'>{item.title}</p>
-			<p className='text-lg italic leading-6 text-right'>
+			{item.name && (
+				<h3 className='text-lg font-bold leading-6'>{item.name}</h3>
+			)}
+			{item.location && (
+				<h3 className='text-base leading-6 text-right'>{item.location}</h3>
+			)}
+			<p className='text-lg font-semibold italic text-green-600 leading-6 inline-flex items-center gap-2'>
+				<BriefcaseBusiness size={13} /> {item.title}
+			</p>
+			<p className='text-base italic leading-6 text-right text-green-600'>
 				{item.startDate
-					? `${item.startDate}- ${item.endDate}`
+					? `${item.startDate} - ${item.endDate}`
 					: `Titulado en: ${item.endDate}`}
 			</p>
 		</div>
