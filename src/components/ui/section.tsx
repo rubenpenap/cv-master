@@ -9,10 +9,6 @@ interface SectionProps extends React.HTMLAttributes<HTMLHeadingElement> {
 	items: ResumeSections;
 }
 
-const hasId = (item: unknown): item is { id: string } => {
-	return typeof item === 'object' && item !== null && 'id' in item;
-};
-
 const Section: React.FC<SectionProps> = ({
 	className,
 	title,
@@ -24,17 +20,35 @@ const Section: React.FC<SectionProps> = ({
 		{...props}
 	>
 		<SectionTitle title={title} />
-		{items.length > 0 && hasId(items[0]) ? (
-			items.map((item) =>
-				hasId(item) ? <SectionItem key={item.id} item={item} /> : null,
-			)
+		{!Array.isArray(items) ? (
+			<>
+				<p className='text-base mb-2'>
+					<span className='font-bold'>Technical: </span>
+					{items.technical.map((skill, index) =>
+						items.technical.length - 1 === index ? `${skill}` : `${skill} | `,
+					)}
+				</p>
+				<p className='text-base mb-2'>
+					<span className='font-bold'>Soft: </span>
+					{items.softs.map((skill, index) =>
+						items.softs.length - 1 === index ? `${skill}` : `${skill} | `,
+					)}
+				</p>
+				<p className='text-base'>
+					<span className='font-bold'>Tools: </span>
+					{items.tools.map((skill, index) =>
+						items.tools.length - 1 === index ? `${skill}` : `${skill} | `,
+					)}
+				</p>
+			</>
 		) : (
-			<p className='text-base'>
-				{items.map((item, index) => {
-					const itemText = !hasId(item) ? item : null;
-					return items.length - 1 === index ? `${itemText}` : `${itemText} | `;
-				})}
-			</p>
+			items.map((item) => (
+				<SectionItem
+					key={item.id}
+					item={item}
+					education={title === 'EDUCATION' || title === 'EDUCACIÓN'}
+				/>
+			))
 		)}
 	</section>
 );

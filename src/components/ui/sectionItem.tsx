@@ -1,17 +1,18 @@
 import * as React from 'react';
-import { BriefcaseBusiness } from 'lucide-react';
+import { BriefcaseBusiness, GraduationCap } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import {} from '@/components/ui/';
 import { Item } from '@/data/data';
 
 interface SectionItemProps extends React.HTMLAttributes<HTMLHeadingElement> {
 	className?: string;
 	item: Item;
+	education: boolean;
 }
 
 const SectionItem: React.FC<SectionItemProps> = ({
 	className,
 	item,
+	education,
 	...props
 }) => (
 	<div className={'mb-2'}>
@@ -26,12 +27,17 @@ const SectionItem: React.FC<SectionItemProps> = ({
 				<h3 className='text-base leading-6 text-right'>{item.location}</h3>
 			)}
 			<p className='text-lg font-semibold italic text-green-600 leading-6 inline-flex items-center gap-2'>
-				<BriefcaseBusiness size={13} /> {item.title}
+				{education ? (
+					<GraduationCap size={13} />
+				) : (
+					<BriefcaseBusiness size={13} />
+				)}
+				{item.title}
 			</p>
 			<p className='text-base italic leading-6 text-right text-green-600'>
 				{item.startDate
 					? `${item.startDate} - ${item.endDate}`
-					: `Titulado en: ${item.endDate}`}
+					: `Graduated in: ${item.endDate}`}
 			</p>
 		</div>
 		<ul>
