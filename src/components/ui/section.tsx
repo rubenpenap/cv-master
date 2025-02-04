@@ -23,19 +23,19 @@ const Section: React.FC<SectionProps> = ({
 		{!Array.isArray(items) ? (
 			<>
 				<p className='text-base mb-2'>
-					<span className='font-bold'>Technical: </span>
+					<span className='font-bold'>Técnicas: </span>
 					{items.technical.map((skill, index) =>
 						items.technical.length - 1 === index ? `${skill}` : `${skill} | `,
 					)}
 				</p>
 				<p className='text-base mb-2'>
-					<span className='font-bold'>Soft: </span>
+					<span className='font-bold'>Blandas: </span>
 					{items.softs.map((skill, index) =>
 						items.softs.length - 1 === index ? `${skill}` : `${skill} | `,
 					)}
 				</p>
 				<p className='text-base'>
-					<span className='font-bold'>Tools: </span>
+					<span className='font-bold'>Herramientas: </span>
 					{items.tools.map((skill, index) =>
 						items.tools.length - 1 === index ? `${skill}` : `${skill} | `,
 					)}

@@ -15,7 +15,7 @@ function App() {
 				<span>|</span>
 				<a
 					className='flex items-center gap-2'
-					href='tel:+1234567890'
+					href='tel:+56982749139'
 					target='_blank'
 				>
 					<Phone size={13} />
@@ -40,11 +40,11 @@ function App() {
 					{data.linkedin}
 				</a>
 			</p>
-			<SectionTitle title='SUMMARY' />
+			<SectionTitle title='PERFIL' />
 			<p className='text-base mb-4'>{data.summary}</p>
-			<Section title='SKILLS' items={data.skills} />
-			<Section title='EXPERIENCE' items={data.experience} />
-			<Section title='EDUCATION' items={data.education} />
+			<Section title='HABILIDADES' items={data.skills} />
+			<Section title='EXPERIENCIA' items={data.experience} />
+			<Section title='EDUCACIÓN' items={data.education} />
 		</main>
 	);
 }

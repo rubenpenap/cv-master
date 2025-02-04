@@ -37,7 +37,7 @@ const SectionItem: React.FC<SectionItemProps> = ({
 			<p className='text-base italic leading-6 text-right text-green-600'>
 				{item.startDate
 					? `${item.startDate} - ${item.endDate}`
-					: `Graduated in: ${item.endDate}`}
+					: `Titulado en: ${item.endDate}`}
 			</p>
 		</div>
 		<ul>
