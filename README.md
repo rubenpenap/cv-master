@@ -70,12 +70,14 @@ react-cv-template/
 
 1. Ve al archivo `src/data/data.ts`.
 2. Llena los campos respetando el formato.
-3. Para cambiar el color del tema del CV, edita el archivo `src/index.css`. Asegúrate de utilizar el formato `hsl` para el color. Si necesitas convertir otro formato a hsl, puedes usar este <a href="https://www.w3schools.com/colors/colors_converter.asp" target="_blank" rel="noopener noreferrer">conversor</a> de colores.
+3. Puedes elegir el lenguaje del cv entre: `english` o `spanish`.
+4. Para cambiar el color del tema del CV, edita el archivo `src/index.css`. Asegúrate de utilizar el formato `hsl` para el color. Si necesitas convertir otro formato a hsl, puedes usar este <a href="https://www.w3schools.com/colors/colors_converter.asp" target="_blank" rel="noopener noreferrer">conversor</a> de colores.
 
 ### Ejemplo de estructura del archivo `data.ts`:
 
 ```json
 {
+	"cvLanguage": "english",
 	"name": "John Doe",
 	"location": "City, Country",
 	"phone": "+1 234 567 890",
@@ -107,6 +109,18 @@ react-cv-template/
 				"Developed and maintained client-facing applications with high usability.",
 				"Collaborated with cross-functional teams to meet project deadlines effectively."
 			]
+		},
+		{
+			"id": "experience-3",
+			"name": "",
+			"title": "Junior Software Engineer",
+			"location": "",
+			"startDate": "June 2017",
+			"endDate": "December 2019",
+			"activities": [
+				"Developed and maintained client-facing applications with high usability.",
+				"Collaborated with cross-functional teams to meet project deadlines effectively."
+			]
 		}
 	],
 	"education": [
@@ -126,7 +140,7 @@ react-cv-template/
 }
 ```
 
-4. Guarda los cambios y recarga la página en tu navegador para ver tu CV actualizado.
+5. Guarda los cambios y recarga la página en tu navegador para ver tu CV actualizado.
 
 ---
 
