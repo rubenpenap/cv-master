@@ -22,7 +22,7 @@ Este proyecto está construido con:
 
 ```bash
 # Clona el repositorio en tu máquina local
-git clone https://github.com/rubenpena/cv-master.git
+git clone https://github.com/rubenpenap/cv-master.git
 ```
 
 ### 2️⃣ Instala las dependencias
