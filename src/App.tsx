@@ -7,7 +7,7 @@ function App() {
 	return (
 		<main className='w-[81.6rem] h-[105.462rem] mx-auto p-6 bg-white'>
 			<h1 className='text-4xl font-bold text-center mb-1'>{data.name}</h1>
-			<p className='text-lg font-semibold text-green-600 mb-4 flex items-center justify-center gap-4'>
+			<p className='text-lg font-semibold text-theme mb-4 flex items-center justify-center gap-4'>
 				<span className='flex items-center gap-2'>
 					<MapPin size={13} />
 					{data.location}
@@ -15,7 +15,7 @@ function App() {
 				<span>|</span>
 				<a
 					className='flex items-center gap-2'
-					href='tel:+56982749139'
+					href={`tel:${data.phone}`}
 					target='_blank'
 				>
 					<Phone size={13} />
@@ -24,7 +24,7 @@ function App() {
 				<span>|</span>
 				<a
 					className='flex items-center gap-2'
-					href='mailto:rubenpenap@gmail.com'
+					href={`mailto:${data.email}`}
 					target='_blank'
 				>
 					<Mail size={13} />
@@ -33,7 +33,7 @@ function App() {
 				<span>|</span>
 				<a
 					className='flex items-center gap-2'
-					href='https://www.linkedin.com/in/rubenpenap/'
+					href={`https://www.${data.linkedin}`}
 					target='_blank'
 				>
 					<Linkedin size={13} />
