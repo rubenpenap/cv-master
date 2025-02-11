@@ -26,7 +26,7 @@ const SectionItem: React.FC<SectionItemProps> = ({
 			{item.location && (
 				<h3 className='text-base leading-6 text-right'>{item.location}</h3>
 			)}
-			<p className='text-lg font-semibold italic text-green-600 leading-6 inline-flex items-center gap-2'>
+			<p className='text-lg font-semibold italic text-theme leading-6 inline-flex items-center gap-2'>
 				{education ? (
 					<GraduationCap size={13} />
 				) : (
@@ -34,7 +34,7 @@ const SectionItem: React.FC<SectionItemProps> = ({
 				)}
 				{item.title}
 			</p>
-			<p className='text-base italic leading-6 text-right text-green-600'>
+			<p className='text-base italic leading-6 text-right text-theme'>
 				{item.startDate
 					? `${item.startDate} - ${item.endDate}`
 					: `Titulado en: ${item.endDate}`}

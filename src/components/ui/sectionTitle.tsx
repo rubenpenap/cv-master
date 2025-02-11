@@ -15,7 +15,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 }) => (
 	<h2
 		className={cn(
-			`text-${align} scroll-m-20 text-2xl font-bold tracking-tight mb-2 text-green-600 flex items-center gap-4 before:flex-1 before:h-px before:bg-green-600 after:flex-1 after:h-px after:bg-green-600`,
+			`text-${align} scroll-m-20 text-2xl font-bold tracking-tight mb-2 text-theme flex items-center gap-4 before:flex-1 before:h-px before:bg-theme after:flex-1 after:h-px after:bg-theme`,
 			className,
 		)}
 		{...props}
