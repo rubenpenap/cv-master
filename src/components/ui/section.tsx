@@ -1,17 +1,13 @@
 import * as React from 'react';
 import { SectionTitle, SectionItem } from '@/components/ui/';
 import { cn } from '@/lib/utils';
-import { ResumeSections } from '@/data/data';
+import { ResumeSections, language } from '@/data/data';
 
 interface SectionProps extends React.HTMLAttributes<HTMLHeadingElement> {
 	className?: string;
 	title: string;
 	items: ResumeSections;
 }
-
-const hasId = (item: unknown): item is { id: string } => {
-	return typeof item === 'object' && item !== null && 'id' in item;
-};
 
 const Section: React.FC<SectionProps> = ({
 	className,
@@ -24,17 +20,39 @@ const Section: React.FC<SectionProps> = ({
 		{...props}
 	>
 		<SectionTitle title={title} />
-		{items.length > 0 && hasId(items[0]) ? (
-			items.map((item) =>
-				hasId(item) ? <SectionItem key={item.id} item={item} /> : null,
-			)
+		{!Array.isArray(items) ? (
+			<>
+				<p className='text-base mb-2'>
+					<span className='font-bold'>
+						{language ? 'Technical: ' : 'Técnicas: '}
+					</span>
+					{items.technical.map((skill, index) =>
+						items.technical.length - 1 === index ? `${skill}` : `${skill} | `,
+					)}
+				</p>
+				<p className='text-base mb-2'>
+					<span className='font-bold'>{language ? 'Soft: ' : 'Blandas: '}</span>
+					{items.softs.map((skill, index) =>
+						items.softs.length - 1 === index ? `${skill}` : `${skill} | `,
+					)}
+				</p>
+				<p className='text-base'>
+					<span className='font-bold'>
+						{language ? 'Tools: ' : 'Herramientas: '}
+					</span>
+					{items.tools.map((skill, index) =>
+						items.tools.length - 1 === index ? `${skill}` : `${skill} | `,
+					)}
+				</p>
+			</>
 		) : (
-			<p className='text-base'>
-				{items.map((item, index) => {
-					const itemText = !hasId(item) ? item : null;
-					return items.length - 1 === index ? `${itemText}` : `${itemText} | `;
-				})}
-			</p>
+			items.map((item) => (
+				<SectionItem
+					key={item.id}
+					item={item}
+					education={title === 'EDUCATION' || title === 'EDUCACIÓN'}
+				/>
+			))
 		)}
 	</section>
 );
