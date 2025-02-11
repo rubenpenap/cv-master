@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SectionTitle, SectionItem } from '@/components/ui/';
 import { cn } from '@/lib/utils';
-import { ResumeSections } from '@/data/data';
+import { ResumeSections, language } from '@/data/data';
 
 interface SectionProps extends React.HTMLAttributes<HTMLHeadingElement> {
 	className?: string;
@@ -23,19 +23,23 @@ const Section: React.FC<SectionProps> = ({
 		{!Array.isArray(items) ? (
 			<>
 				<p className='text-base mb-2'>
-					<span className='font-bold'>Técnicas: </span>
+					<span className='font-bold'>
+						{language ? 'Technical: ' : 'Técnicas: '}
+					</span>
 					{items.technical.map((skill, index) =>
 						items.technical.length - 1 === index ? `${skill}` : `${skill} | `,
 					)}
 				</p>
 				<p className='text-base mb-2'>
-					<span className='font-bold'>Blandas: </span>
+					<span className='font-bold'>{language ? 'Soft: ' : 'Blandas: '}</span>
 					{items.softs.map((skill, index) =>
 						items.softs.length - 1 === index ? `${skill}` : `${skill} | `,
 					)}
 				</p>
 				<p className='text-base'>
-					<span className='font-bold'>Herramientas: </span>
+					<span className='font-bold'>
+						{language ? 'Tools: ' : 'Herramientas: '}
+					</span>
 					{items.tools.map((skill, index) =>
 						items.tools.length - 1 === index ? `${skill}` : `${skill} | `,
 					)}
