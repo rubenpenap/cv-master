@@ -112,9 +112,7 @@ react-cv-template/
 		},
 		{
 			"id": "experience-3",
-			"name": "",
 			"title": "Junior Software Engineer",
-			"location": "",
 			"startDate": "June 2017",
 			"endDate": "December 2019",
 			"activities": [
