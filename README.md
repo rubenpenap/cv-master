@@ -70,7 +70,7 @@ react-cv-template/
 
 1. Ve al archivo `src/data/data.ts`.
 2. Llena los campos respetando el formato.
-3. Para cambiar el color del tema del CV, edita el archivo `src/index.css`. Asegúrate de utilizar el formato `hsl` para el color. Si necesitas convertir otro formato a hsl, puedes usar este [conversor](https://www.w3schools.com/colors/colors_converter.asp) de colores.
+3. Para cambiar el color del tema del CV, edita el archivo `src/index.css`. Asegúrate de utilizar el formato `hsl` para el color. Si necesitas convertir otro formato a hsl, puedes usar este <a href="https://www.w3schools.com/colors/colors_converter.asp" target="_blank" rel="noopener noreferrer">conversor</a> de colores.
 
 ### Ejemplo de estructura del archivo `data.ts`:
 
@@ -126,7 +126,7 @@ react-cv-template/
 }
 ```
 
-3. Guarda los cambios y recarga la página en tu navegador para ver tu CV actualizado.
+4. Guarda los cambios y recarga la página en tu navegador para ver tu CV actualizado.
 
 ---
 
