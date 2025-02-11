@@ -86,8 +86,8 @@ export const data: Data = {
 	],
 	skills: {
 		technical: ['JavaScript (ES6+)', 'TypeScript', 'React', 'HTML5', 'CSS3'],
-		tools: ['Git', 'GitHub', 'VS Code'],
 		softs: ['Teamwork', 'Communication', 'Problem Solving'],
+		tools: ['Git', 'GitHub', 'VS Code'],
 	},
 };
 

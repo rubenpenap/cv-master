@@ -132,13 +132,13 @@ react-cv-template/
 	],
 	"skills": {
 		"technical": ["JavaScript (ES6+)", "TypeScript", "React", "HTML5", "CSS3"],
-		"tools": ["Git", "GitHub", "VS Code"],
-		"softs": ["Teamwork", "Communication", "Problem Solving"]
+		"softs": ["Teamwork", "Communication", "Problem Solving"],
+		"tools": ["Git", "GitHub", "VS Code"]
 	}
 }
 ```
 
-5. Guarda los cambios y recarga la página en tu navegador para ver tu CV actualizado.
+1. Guarda los cambios y recarga la página en tu navegador para ver tu CV actualizado.
 
 ---
 
