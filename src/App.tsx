@@ -1,5 +1,5 @@
 import { Section, SectionTitle } from '@/components/ui/';
-import { Linkedin, MapPin, Mail, Phone } from 'lucide-react';
+import { Linkedin, MapPin, Mail, Phone, Github } from 'lucide-react';
 import { data, language } from '@/data/data';
 import './App.css';
 
@@ -10,6 +10,7 @@ function App() {
 		phone,
 		email,
 		linkedin,
+		github,
 		summary,
 		skills,
 		experience,
@@ -50,6 +51,19 @@ function App() {
 					<Linkedin size={13} />
 					{`linkedin.com/in/${linkedin}`}
 				</a>
+				{github && (
+					<>
+						<span>|</span>
+						<a
+							className='flex items-center gap-2'
+							href={`https://github.com/${github}`}
+							target='_blank'
+						>
+							<Github size={13} />
+							{`github.com/${github}`}
+						</a>
+					</>
+				)}
 			</p>
 			<SectionTitle title={language ? 'PROFILE' : 'PERFIL'} />
 			<p className='text-base mb-4'>{summary}</p>
