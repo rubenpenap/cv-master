@@ -72,6 +72,7 @@ react-cv-template/
 2. Llena los campos respetando el formato.
 3. Puedes elegir el lenguaje del cv entre: `english` o `spanish`.
 4. Para cambiar el color del tema del CV, edita el archivo `src/index.css`. Asegúrate de utilizar el formato `hsl` para el color. Si necesitas convertir otro formato a hsl, puedes usar este <a href="https://www.w3schools.com/colors/colors_converter.asp" target="_blank" rel="noopener noreferrer">conversor</a> de colores.
+5. Si quieres cambiar el tamaño de los iconos, edita el archivo `src/App.tsx` y cambia el valor de la variable `iconSize` por el que desees.
 
 ### Ejemplo de estructura del archivo `data.ts`:
 
