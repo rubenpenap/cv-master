@@ -2,6 +2,7 @@ import * as React from 'react';
 import { BriefcaseBusiness, GraduationCap } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Item, language } from '@/data/data';
+import { iconSize } from '@/App';
 
 interface SectionItemProps extends React.HTMLAttributes<HTMLHeadingElement> {
 	className?: string;
@@ -37,9 +38,9 @@ const SectionItem: React.FC<SectionItemProps> = ({
 				)}
 				<p className='text-lg font-semibold italic text-theme leading-6 inline-flex items-center gap-2'>
 					{education ? (
-						<GraduationCap size={13} />
+						<GraduationCap size={iconSize} />
 					) : (
-						<BriefcaseBusiness size={13} />
+						<BriefcaseBusiness size={iconSize} />
 					)}
 					{title}
 				</p>
