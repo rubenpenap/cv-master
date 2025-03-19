@@ -5,6 +5,7 @@ export type Data = {
 	phone: string;
 	email: string;
 	linkedin: string;
+	github?: string;
 	summary: string;
 	experience: Item[];
 	education: Item[];
@@ -37,6 +38,7 @@ export const data: Data = {
 	phone: '+1 234 567 890',
 	email: 'john.doe@example.com',
 	linkedin: 'johndoe',
+	github: 'johndoe',
 	summary:
 		'A highly skilled Software Engineer with extensive experience in web development, project management, and team leadership. Adept at driving innovation and delivering high-quality solutions to meet business objectives.',
 	experience: [

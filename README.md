@@ -83,6 +83,7 @@ react-cv-template/
 	"phone": "+1 234 567 890",
 	"email": "john.doe@example.com",
 	"linkedin": "johndoe", // Solo el nombre de usuario de linkedin
+	"github": "johndoe", // Solo el nombre de usuario de github
 	"summary": "A highly skilled Software Engineer with extensive experience in web development, project management, and team leadership. Adept at driving innovation and delivering high-quality solutions to meet business objectives.",
 	"experience": [
 		{
