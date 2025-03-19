@@ -79,26 +79,27 @@ react-cv-template/
 {
 	"cvLanguage": "english",
 	"name": "John Doe",
-	"location": "City, Country",
+	"location": "City, Country", // Opcional
 	"phone": "+1 234 567 890",
-	"email": "john.doe@example.com",
+	"email": "john.doe@mail.com",
 	"linkedin": "johndoe", // Solo el nombre de usuario de linkedin
-	"github": "johndoe", // Solo el nombre de usuario de github
+	"github": "johndoe", // Solo el nombre de usuario de github (Opcional)
+	"website": "example.com", // Solo el dominio de tu sitio web (Opcional)
 	"summary": "A highly skilled Software Engineer with extensive experience in web development, project management, and team leadership. Adept at driving innovation and delivering high-quality solutions to meet business objectives.",
 	"experience": [
 		{
 			"id": "experience-1",
-			"name": "Tech Corp",
+			"name": "Tech Corp", // Opcional
 			"title": "Senior Software Engineer",
-			"location": "City, Country",
-			"startDate": "January 2020",
-			"endDate": "Present",
-			"description": "Led the development of a robust web application, significantly improving performance. Mentored junior developers to foster growth and knowledge sharing. Implemented agile processes that enhanced project delivery and team collaboration.",
+			"location": "City, Country", // Opcional
+			"startDate": "January 2020", // Opcional
+			"endDate": "Present", // Opcional
+			"description": "Led the development of a robust web application, significantly improving performance. Mentored junior developers to foster growth and knowledge sharing. Implemented agile processes that enhanced project delivery and team collaboration.", // Opcional
 			"activities": [
 				"Led the development of a robust web application, significantly improving performance.",
 				"Mentored junior developers to foster growth and knowledge sharing.",
 				"Implemented agile processes that enhanced project delivery and team collaboration."
-			]
+			] // Opcional
 		},
 		{
 			"id": "experience-2",
