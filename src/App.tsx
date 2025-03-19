@@ -44,11 +44,11 @@ function App() {
 				<span>|</span>
 				<a
 					className='flex items-center gap-2'
-					href={`https://www.${linkedin}`}
+					href={`https://www.linkedin.com/in/${linkedin}`}
 					target='_blank'
 				>
 					<Linkedin size={13} />
-					{linkedin}
+					{`linkedin.com/in/${linkedin}`}
 				</a>
 			</p>
 			<SectionTitle title={language ? 'PROFILE' : 'PERFIL'} />
