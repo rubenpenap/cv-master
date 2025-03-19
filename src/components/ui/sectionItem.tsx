@@ -15,7 +15,16 @@ const SectionItem: React.FC<SectionItemProps> = ({
 	education,
 	...props
 }) => {
-	const { name, location, title, startDate, endDate, activities, id } = item;
+	const {
+		name,
+		location,
+		title,
+		startDate,
+		endDate,
+		description,
+		activities,
+		id,
+	} = item;
 	return (
 		<div className={'mb-2'}>
 			<div
@@ -40,6 +49,7 @@ const SectionItem: React.FC<SectionItemProps> = ({
 						: `${language ? 'Graduated in:' : 'Titulado en:'} ${endDate}`}
 				</p>
 			</div>
+			{description && <p className='text-base leading-6 pb-2'>{description}</p>}
 			<ul>
 				{activities?.map((activity, index) => (
 					<li
