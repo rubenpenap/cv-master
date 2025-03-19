@@ -50,7 +50,7 @@ function App() {
 				<span>|</span>
 				<a
 					className='flex items-center gap-2'
-					href={`https://www.linkedin.com/in/${linkedin}`}
+					href={`https://linkedin.com/in/${linkedin}`}
 					target='_blank'
 				>
 					<Linkedin size={13} />
@@ -74,7 +74,7 @@ function App() {
 						<span>|</span>
 						<a
 							className='flex items-center gap-2'
-							href={`https://www.${website}`}
+							href={`https://${website}`}
 							target='_blank'
 						>
 							<Globe size={13} />
