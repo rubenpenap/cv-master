@@ -92,6 +92,7 @@ react-cv-template/
 			"location": "City, Country",
 			"startDate": "January 2020",
 			"endDate": "Present",
+			"description": "Led the development of a robust web application, significantly improving performance. Mentored junior developers to foster growth and knowledge sharing. Implemented agile processes that enhanced project delivery and team collaboration.",
 			"activities": [
 				"Led the development of a robust web application, significantly improving performance.",
 				"Mentored junior developers to foster growth and knowledge sharing.",
@@ -115,6 +116,7 @@ react-cv-template/
 			"title": "Junior Software Engineer",
 			"startDate": "June 2017",
 			"endDate": "December 2019",
+			"description": "Developed and maintained client-facing applications with high usability. Collaborated with cross-functional teams to meet project deadlines effectively.",
 			"activities": [
 				"Developed and maintained client-facing applications with high usability.",
 				"Collaborated with cross-functional teams to meet project deadlines effectively."
