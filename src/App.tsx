@@ -24,7 +24,7 @@ function App() {
 				{location && (
 					<>
 						<span className='flex items-center gap-2'>
-							<MapPin size={13} />
+							<MapPin size={iconSize} />
 							{location}
 						</span>
 						<span>|</span>
@@ -35,7 +35,7 @@ function App() {
 					href={`tel:${phone.trim()}`}
 					target='_blank'
 				>
-					<Phone size={13} />
+					<Phone size={iconSize} />
 					{phone}
 				</a>
 				<span>|</span>
@@ -44,7 +44,7 @@ function App() {
 					href={`mailto:${email}`}
 					target='_blank'
 				>
-					<Mail size={13} />
+					<Mail size={iconSize} />
 					{email}
 				</a>
 				<span>|</span>
@@ -53,7 +53,7 @@ function App() {
 					href={`https://linkedin.com/in/${linkedin}`}
 					target='_blank'
 				>
-					<Linkedin size={13} />
+					<Linkedin size={iconSize} />
 					{`linkedin.com/in/${linkedin}`}
 				</a>
 				{github && (
@@ -64,7 +64,7 @@ function App() {
 							href={`https://github.com/${github}`}
 							target='_blank'
 						>
-							<Github size={13} />
+							<Github size={iconSize} />
 							{`github.com/${github}`}
 						</a>
 					</>
@@ -77,7 +77,7 @@ function App() {
 							href={`https://${website}`}
 							target='_blank'
 						>
-							<Globe size={13} />
+							<Globe size={iconSize} />
 							{website}
 						</a>
 					</>
@@ -96,5 +96,7 @@ function App() {
 }
 
 App.displayName = 'App';
+
+export const iconSize = 13;
 
 export default App;
