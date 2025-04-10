@@ -24,6 +24,7 @@ const SectionItem: React.FC<SectionItemProps> = ({
 		endDate,
 		description,
 		activities,
+		stack,
 		id,
 	} = item;
 	return (
@@ -61,6 +62,19 @@ const SectionItem: React.FC<SectionItemProps> = ({
 					</li>
 				))}
 			</ul>
+			{stack && (
+				<p
+					key={`stack-${id}`}
+					className='text-sm font-semibold leading-6 pt-2 pb-2'
+				>
+					Stack:{' '}
+					<span className='font-normal italic'>
+						{stack?.map((tool, index) =>
+							stack?.length - 1 === index ? `${tool}` : `${tool} | `,
+						)}
+					</span>
+				</p>
+			)}
 		</div>
 	);
 };
