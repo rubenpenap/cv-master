@@ -87,6 +87,11 @@ react-cv-template/
 	"github": "johndoe", // Solo el nombre de usuario de github (Opcional)
 	"website": "example.com", // Solo el dominio de tu sitio web (Opcional)
 	"summary": "A highly skilled Software Engineer with extensive experience in web development, project management, and team leadership. Adept at driving innovation and delivering high-quality solutions to meet business objectives.",
+  "skills": {
+		"technical": ["JavaScript (ES6+)", "TypeScript", "React", "HTML5", "CSS3"],
+		"softs": ["Teamwork", "Communication", "Problem Solving"],
+		"tools": ["Git", "GitHub", "VS Code"]
+	}
 	"experience": [
 		{
 			"id": "experience-1",
@@ -101,6 +106,7 @@ react-cv-template/
 				"Mentored junior developers to foster growth and knowledge sharing.",
 				"Implemented agile processes that enhanced project delivery and team collaboration."
 			] // Opcional
+      "stack": ["React", "JavaScript", "CSS"]
 		},
 		{
 			"id": "experience-2",
@@ -135,11 +141,6 @@ react-cv-template/
 			"endDate": "May 2017"
 		}
 	],
-	"skills": {
-		"technical": ["JavaScript (ES6+)", "TypeScript", "React", "HTML5", "CSS3"],
-		"softs": ["Teamwork", "Communication", "Problem Solving"],
-		"tools": ["Git", "GitHub", "VS Code"]
-	}
 }
 ```
 
